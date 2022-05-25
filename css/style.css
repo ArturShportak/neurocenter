@@ -235,6 +235,7 @@ body {
   color: var(--main-font-color);
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .nav__bg {
@@ -441,6 +442,7 @@ body {
   font-size: 18px;
   color: var(--main-font-color);
   text-indent: 20px;
+  text-align: justify;
 }
 
 .protrusions__pic {
@@ -457,7 +459,7 @@ body {
 
 .responsive-iframe {
   margin: 30px auto;
-  width: 50%;
+  width: 600px;
   min-height: 320px;
 }
 

@@ -14,11 +14,6 @@ function sctrollToInfo() {
 
 }
 
-function sctrollToAbout() {
-
-    const topOfElement = document.getElementById('about').offsetTop - document.getElementById('nav').offsetHeight - 25;
-    window.scroll({ top: topOfElement, behavior: "smooth" });
-}
 
 function sctrollToTop() {
 
