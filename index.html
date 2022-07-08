@@ -16,165 +16,188 @@
 </head>
 
 <body>
-  <div class="marquee"> <span class="top__text">( Безопераційне лікування ) ( Безопераційне лікування ) ( Безопераційне
-      лікування ) ( Безопераційне лікування ) ( Безопераційне лікування ) ( Безопераційне лікування ) ( Безопераційне
-      лікування ) ( Безопераційне лікування ) ( Безопераційне лікування ) ( Безопераційне лікування ) ( Безопераційне
-      лікування ) ( Безопераційне лікування )
-    </span></div>
-  <div class="moveUp" onclick="sctrollToTop()"> <span class="ico"></span></div>
 
-
-  <header class="header box">
-    <nav class="nav" id="nav">
-
-      <div class="nav_content-box">
-        <img src="./img/logo-neurocenter.svg" alt="neurocenter's logo" class="nav__logo">
-
-
-
-        <ul class="nav__contacts contacts">
-          <li> <button href="" class="nav-scroll" onclick="sctrollToPathology()"> Патології </button></li>
-          <li> <button class="nav-scroll" onclick="sctrollToAbout()"> Інше </button></li>
-          <li> <button class="nav-scroll"> Лікування та реабілітація </button></li>
-          <li> <button class="nav-scroll"> Відгуки </button></li>
-          <li> <button class="nav-scroll"> Форма зворотного звязку </button></li>
+  <div class="_container">
+    <header class="header">
+      <div class="header__info">
+        <img src="./img/logo-neurocenter.svg" alt="">
+        <ul class="header__contacts contacts">
+          <li class="contacts__contact"> <span class="contacts__text">Пошта: </span><a href="mailto:"
+              class="contacts__link"> neurocenter@com.ua </a></li>
+          <li class="contacts__contact"> <span class="contacts__text">Телефон: </span><a href=""
+              class="contacts__link">+38 (095) 644 81-59 </a> </li>
+        </ul>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__links ">
+          <li id="about-link"> <a href=""> ПРО НАС </a></li>
+          <li> <a href=""> ПАТОЛОГІЇ </a></li>
+          <li> <a href=""> ОПЕРАЦІЇ </a></li>
+          <li> <a href=""> КОНТАКТИ </a></li>
         </ul>
 
-        <ul class="nav__contacts contacts">
-          <li> <span class="contact-name">Пошта:</span> <a href="" class="contact"> neurocenter.com.ua </a></li>
-          <li> <span class="contact-name">Телефон:</span> <a href="" class="contact">+38 (095) 644 81-59 </a></li>
-        </ul>
-
+      </nav>
+      <div class="header__text-block">
+        <h1 class="header__title"> Нейроцентр </h1>
+        <h2 class="header__subtitle">Сучасна малоінвазивна хірургія хребта
+        </h2>
+        <p class="header__text">Лікування захворювань хребта (грижі міжхребцевих дисків, грижі Шморля, стеноз
+          спинномозкового каналу,
+          гемангіоми,
+          компресійні переломи тіл хребта) новітніми малоінвазивними та лазерно-вапоризаційними технологіями без розрізу
+          та
+          наркозу</p>
+        <a href="#" class="header__link"> Онлайн консультація </a>
       </div>
-      <hr>
-    </nav>
-    <div class="header__content">
-      <h1 class="header__title" id="h-title"> Позбавтесь болю в спині при протрузії чи грижі <span
-          class="h-title-st-color"> за одну
-          процедуру</span></h1>
-      <p class="header__text"> Холодноплазменна нуклеопластика — найбільш популярна процедура в Європі та США при болю в
-        спині</p>
-      <a href="" class="header__link"> Онлайн консультація </a>
-    </div>
-  </header>
+    </header>
+  </div>
+  
+  <div class="_container" >
 
-  <section class="pathology box" id="pathology">
-    <h2 class="pathology__title"> Патології</h2>
+      <h2 class="opening-button" id="about-opening-btn"> ПРО НАС </h2>
 
-    <h3 class="pathology__subtitle protrusions" onclick="hideBlock()" onclick="sctrollToPathology()"> <span
-        id="subtitle-ico-prot" class="pathology__subtitle-ico"> ↓ </span> Протрузії хребта </h3>
-    <div id="sliderProtr" class="v-hide">
-      <div class="question" id="info">
+    <section class="about" id="about">
+      <h2 class="about__title"> Нуклеопластика в поперековому відділі хребта </h2>
+      <ul class="about__list list">
+        <li class="list__item">Зробили МРТ хребта і вам діагностували протрузію або екструзію (грижу) міжхребцевого
+          диску?</li>
+        <li class="list__item">Знайомі кажуть що у вас защемлення стегнового нерву? </li>
+        <li class="list__item">Чи допоможуть масажі та мануальні терапії? </li>
+        <li class="list__item">Чи витримає ваш шлунок море пігулок та уколів? </li>
+        <li class="list__item">Яке лікування найфективніше? </li>
+        <li class="list__item">Лікування має тривати місяцями, роками, або можливо усунути проблему за один сеанс?
+        </li>
+      </ul>
+      <h3 class="about__subtitle">Для початку необхідно розібратися що ж вам описали на МРТ знімку:</h3>
+      <p class="about__paragraph"> <b class="bold">Протрузія </b> - це випуклість міжхребцевого диску без розриву
+        фіброзного кільця. </p>
 
-        <div class="col col-l">
-          <h2 class="question__title ">Лікування гриж та протрузій міжхребцевих дисків:</h2>
-          <ul class="question__list">
-            <li class="question__item"> <span class="question__item-ico"> 1 </span> Зробили МРТ хребта і вам
-              діагностували
-              протрузію або екструзію (грижу) міжхребцевого диску?</li>
-            <li class="question__item"> <span class="question__item-ico"> 2 </span>Знайомі кажуть що у вас защемлення
-              стегнового нерву? </li>
-            <li class="question__item"> <span class="question__item-ico">3 </span>Чи допоможуть масажі та мануальні
-              терапії?
-            </li>
-            <li class="question__item"> <span class="question__item-ico"> 4 </span>Чи витримає ваш шлунок море пігулок
-              та
-              уколів? </li>
-            <li class="question__item"> <span class="question__item-ico"> 5 </span>Яке лікування найфективніше? </li>
-            <li class="question__item"> <span class="question__item-ico">6 </span>Лікування має тривати місяцями,
-              роками,
-              або
-              можливо усунути проблему за один сеанс?
-            </li>
-          </ul>
-        </div>
-        <div class="col col-img">
-          <img src="./img/question-image.png" alt="" class="mrt__img">
-        </div>
-      </div>
-      <div class="mrt">
-        <div class="col col-img">
-          <img src="./img/mrt-img.png" alt="" class="mrt__img">
-        </div>
-        <div class="col col-r">
-          <h2 class="mrt__title">Для початку необхідно розібратися що ж вам описали на МРТ знімку:</h2>
-          <ul class="mrt__list">
-
-            <li class="mrt__item"> <span class="mrt__item-ico"> 1 </span> <span class="mrt__highlighted">Протрузія
-              </span>-
-              це випуклість міжхребцевого диску без розриву фіброзного кільця. </li>
-            <li class="mrt__item"> <span class="mrt__item-ico"> 2 </span> <span class="mrt__highlighted"> Екструзія
-                (грижа)
-              </span>- це випуклість міжхребцевого диску з розривом фіброзного кільця.</li>
-
-          </ul>
-        </div>
-
-      </div>
-      <h4 class="protrusions__title"> Яка ж процедура тоді найфективніша в лікуванні захворювань хребта?</h4>
-      <p class="protrusions__text">
-        В Європі та США останні роки почали надавати перевагу малоінвазивним втручанням на хребті. Серед них
-        найефективнішою є холодноплазменна нуклеопластика. Перш за все необхідна консультацію з фахівцем, можна
-        записатися за номером телефону вказаним на титульній сторінці
-      </p>
-      <p class="protrusions__text">Холодноплазменна нуклеопластика — це малоінвазивна операція, суть якої полягає в
-        «випаровуванні» плазмою «зайвої» речовини диска. В результаті декомпресії диска, протрузія зникає, а разом з нею
-        і всі симптоми захворювання.
+      <h3 class="about__subtitle">Яка ж процедура тоді найфективніша в лікуванні захворювань хребта?</h3>
+      <p class="about__paragraph"> В Європі та США останні роки почали надавати перевагу малоінвазивним втручанням на хребті. Серед них
+        найефективнішою є холодноплазменна  <b class="bold"> нуклеопластика </b>. Перш за все необхідна консультацію з фахівцем, можна
+        записатися за номером телефону вказаним на титульній сторінці.</p>
+      <p class="about__paragraph"> <b class="bold"> Холодноплазменна нуклеопластика </b> — це малоінвазивна операція, суть якої полягає в «випаровуванні» плазмою
+        «зайвої» речовини диска. В результаті декомпресії диска, протрузія зникає, а разом з нею і всі симптоми
+        захворювання.
         Хірург вводить в пошкоджений диск пункційну голку в електродом виключно під контролем рентгену, що гарантує
         безпечність процедури.
         Втручання не пов’язане з болем, не вимагає післяопераційної реабілітації, не має протипоказань за віком.
         Ускладнення практично не зустрічаються.
-      </p>
-      <p class="protrusions__text">
         Полегшення, як правило, настає одразу ж після проведення процедури, але повне усунення всіх симптомів
         відбувається через два місяці після операції. Цей період необхідний для згасання пов’язаного з протрузією
-        запального процесу, а також для відновлення пошкодженої нервової тканини.
-      </p>
-      <img src="./img/protrusions-1.jpg" alt="" class="protrusions__pic">
-      <p class="protrusions__text"> Нуклеопластика — більше 25 років є найбільш популярної процедурою при протрузіях та
-        грижах, в провідних клініках Європи та США. Перевагами даного методу є: не потребує загального наркозу
-        (інтубації), тривалість близько 10-15 хвилин, процедуру можна віднести до амбулаторних (виписка відбувається в
-        той самий день), відсутність ускладнень які можуть виникнути в результаті відкритої операції у більшості
-        пацієнтів зменшення болю виникає навіть під час самої процедури
-        Процедура проводиться як в шийному так і в поперековому відділі хребта
-      </p>
-      <div class="protrusions__video">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/cLN3Vd64vXk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      </div>
-    </div>
-    <h3 class="pathology__subtitle" id="subtitle-et" onclick="hideBlock1()"> ↓ Інше </h3>
-    <div id="sliderProtr1" class="v-hide">
-      <div class="mrt">
-        <div class="col col-img">
-          <img src="./img/mrt-img.png" alt="" class="mrt__img">
+        запального процесу, а також для відновлення пошкодженої нервової тканини.</p>
+        <p class="about__paragraph"> <b  class="bold" >Нуклеопластика</b> — більше 25 років є найбільш популярної процедурою при протрузіях та грижах, в провідних клініках Європи та США. Перевагами даного методу є: не потребує загального наркозу (інтубації), тривалість близько 10-15 хвилин, процедуру можна віднести до амбулаторних (виписка відбувається в той самий день), відсутність ускладнень які можуть виникнути в результаті відкритої операції у більшості пацієнтів зменшення болю виникає навіть під час самої процедури
+          Процедура проводиться як в шийному так і в поперековому відділі хребта.
+        </p>
+        <div class="about__pics">
+          <img src="./img/about-1.jpg" alt="">
+          <img src="./img/about-2.jpg" alt="">
+          <img src="./img/about-3.jpg" alt="">
         </div>
-        <div class="col col-r">
-          <h2 class="mrt__title">Для початку необхідно розібратися що ж вам описали на МРТ знімку:</h2>
-          <ul class="mrt__list">
+    </section>
+  </div>
 
-            <li class="mrt__item"> <span class="mrt__item-ico"> 1 </span> <span class="mrt__highlighted">Протрузія
-              </span>-
-              це випуклість міжхребцевого диску без розриву фіброзного кільця. </li>
-            <li class="mrt__item"> <span class="mrt__item-ico"> 2 </span> <span class="mrt__highlighted"> Екструзія
-                (грижа)
-              </span>- це випуклість міжхребцевого диску з розривом фіброзного кільця.</li>
+  </div>
+  <div class="_container">
 
+    <section class=" choice-information ">
+
+      <div class="col-list choice-information__col-list">
+        <h2 class="col-list__title">ПАТОЛОГІЇ</h2>
+        <div class="list-wrap">
+          <ul class="col-list__list">
+            <li class="col-list__item">Протрузії хребта</li>
+            <li class="col-list__item">ПАТАЛОГІЯ 2</li>
+            <li class="col-list__item">ПАТАЛОГІЯ 3</li>
+            <li class="col-list__item">ПАТАЛОГІЯ 4</li>
+            <li class="col-list__item">ПАТАЛОГІЯ 5</li>
+            <li class="col-list__item">ПАТАЛОГІЯ 6</li>
           </ul>
         </div>
-
       </div>
-    </div>
-  </section>
+      <div class="col-list choice-information__col-list">
+        <div class="col-list">
+          <h2 class="col-list__title">ОПЕРАЦІЇ</h2>
+          <div class="list-wrap">
+            <ul class="col-list__list">
+              <li class="col-list__item">ОПЕРАЦІЯ 1</li>
+              <li class="col-list__item">ОПЕРАЦІЯ 2</li>
+              <li class="col-list__item">ОПЕРАЦІЯ 3</li>
+              <li class="col-list__item">ОПЕРАЦІЯ 4</li>
+              <li class="col-list__item">ОПЕРАЦІЯ 5</li>
+              <li class="col-list__item">ОПЕРАЦІЯ 6</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class=" _container">
+    <section class="patient-response">
+
+      <div class="patient-response__title-bg">
+        <h2 class="patient-response__title">ЩО говорять наші пацієнти?</h2>
+      </div>
+      <div class="patient-response__body">
+        <div class="patient-response__photo-wrap">
+          <img src="./img/patient-response.png" alt="" class="patient-response__photo ">
+        </div>
+        <div class="patient-response__text">
+          <h3 class="patient-response__name">Ім’я того хто дає відгук</h3>
+          <p class="patient-response__data"> 18.12.2020 </p>
+          <p class="patient-response__response-text"> Холодноплазменна нуклеопластика — це малоінвазивна операція, суть
+            якої полягає в «випаровуванні» плазмою «зайвої» речовини диска. В результаті декомпресії диска, протрузія
+            зникає, а разом з нею і всі симптоми захворювання.
+            Хірург вводить в пошкоджений диск пункційну голку в електродом виключно під контролем рентгену, що гарантує
+            безпечність процедури.
+            Втручання не пов’язане з болем, не вимагає післяопераційної реабілітації, не має протипоказань за віком.
+            Ускладнення
+          </p>
 
 
+        </div>
+        <svg class="patient-response__quotes" width="62" height="52" viewBox="0 0 62 52" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.601 25.6488L15.3967 23.8781H13.6142H2V2H23.9067V29.3133C23.9067 36.9444 21.7379 42.3492 17.7097 45.9059L17.7025 45.9122L17.6953 45.9187C14.1355 49.1235 9.10587 50.5415 2.28532 49.8143L3.16431 44.0687C6.29989 44.0343 8.99381 43.3495 11.0149 41.7654C13.272 39.9963 14.6916 37.5809 15.3072 34.6478C15.8877 31.882 15.9735 28.8756 15.601 25.6488ZM49.7075 23.8781H38.0933V2H60V29.3133C60 36.9444 57.8312 42.3492 53.803 45.9059L53.7958 45.9122L53.7886 45.9187C50.2289 49.1235 45.1992 50.5415 38.3786 49.8143L39.2576 44.0687C42.3932 44.0343 45.0871 43.3495 47.1082 41.7654C49.3653 39.9962 50.7849 37.5809 51.4005 34.6478C51.981 31.882 52.0668 28.8756 51.6944 25.6488L51.49 23.8781H49.7075Z"
+            stroke="#73A1E7" stroke-width="4" />
+        </svg>
+      </div>
+    </section>
+  </div>
 
-  <section class="contacts-section">
-    <h2 class="contacts-section __title">Контакти</h2>
-  </section>
-
-
+  <div class="_container">
+    <section class="contacts-sect">
+      <div class="contacts-sect__header">
+        <h2 class="contacts-sect__title">КОНТАКТИ </h2>
+      </div>
+      <div class="contacts-sect__body">
+        <div class="contacts-sect__col-l">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40597.0021237228!2d30.765902679682675!3d50.509749547701475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4dbd17dd51cef%3A0xf6ebb2dcfc8e9689!2z0JHRgNC-0LLQsNGA0LgsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7Liwg0KPQutGA0LDRl9C90LA!5e0!3m2!1suk!2s!4v1656413205737!5m2!1suk!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contacts-sect__col-r">
+          <div class="contacts-sect__contact-block contact-block">
+            <h3 class="contact-block__title">КОНТАКТИ</h3>
+            <a href="" class="contact-block__link"> +38 (095) 644 81-59 </a> <br>
+            <a href="mailto:" class="contact-block__link"> neurocenter@com.ua</a>
+          </div>
+          <div class="contacts-sect__contact-block contact-block">
+            <h3 class="contact-block__title">ГРАФІК РОБОТИ :</h3>
+            <span class="contact-block__text"> ПН - НД </span> <span class="contact-block__text">9:00 - 16:00</span>
+          </div>
+          <div class="contacts-sect__contact-block contact-block">
+            <h3 class="contact-block__title">Адрес:</h3>
+            <span class="contact-block__text"> м.Бровари </span>
+          </div>
+        </div>
+      </div>
+      <div class=""> </div>
+    </section>
+  </div>
   <script src="./js/script.js"></script>
 
 </body>
